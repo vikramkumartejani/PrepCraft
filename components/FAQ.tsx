@@ -39,7 +39,7 @@ const FAQ = () => {
                     {faqs.map((faq, index) => (
                         <div 
                             key={index}
-                            className={`bg-red-500 rounded-xl md:rounded-[24px] px-5 md:px-10 overflow-hidden cursor-pointer transition-colors duration-300  
+                            className={`rounded-xl md:rounded-[24px] px-5 md:px-10 overflow-hidden cursor-pointer transition-colors duration-300  
                             ${openIndex === index ? 'bg-[#0E1A33]' : 'bg-[#0E1A33] '}`}
                             onClick={() => setOpenIndex(openIndex === index ? null : index)}
                             >
