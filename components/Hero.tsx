@@ -11,7 +11,6 @@ const Hero = () => {
     >
       <Navbar />
 
-      {/* Hero section content */}
       <div className="mt-10 relative z-30 max-w-[1180px] w-full mx-auto h-full">
         <OrbitingCirclesDemo />
       </div>
