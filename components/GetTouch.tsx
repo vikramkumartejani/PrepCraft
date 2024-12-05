@@ -60,7 +60,7 @@ const GetTouch = () => {
                 </button>
               </div>
               <div className="mt-[51px] flex flex-wrap items-center justify-center gap-[30px]">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center md:gap-4 gap-2">
                   <img
                     src="/assets/correct.svg"
                     alt="correct"
@@ -71,7 +71,7 @@ const GetTouch = () => {
                     Free 15 days trial
                   </h2>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center md:gap-4 gap-2">
                   <img
                     src="/assets/correct.svg"
                     alt="correct"
@@ -82,7 +82,7 @@ const GetTouch = () => {
                     No credit card required
                   </h2>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center md:gap-4 gap-2">
                   <img
                     src="/assets/correct.svg"
                     alt="correct"
