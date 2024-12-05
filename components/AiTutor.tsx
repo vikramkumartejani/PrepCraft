@@ -46,7 +46,7 @@ const AiTutor = () => {
                 </h2>
                 <p className="text-[#D8DCED] text-[16px] leading-[24.8px] font-normal text-center">
                     At PrepCraft, we make learning both effective and enjoyable. Our
-                    AI-driven platform offers practice exams tailored to your child’s
+                    AI-driven platform offers practice exams tailored to your child&apos;s
                     learning style, providing age-appropriate explanations for challenging
                     concepts. Plus, with our suite of educational games—including Wordle,
                     Spelling Bee, Chess, and Crosswords—your child can have fun while
