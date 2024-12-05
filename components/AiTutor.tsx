@@ -90,7 +90,7 @@ const AiTutor = () => {
 
                             <p className="text-[#A5AAC6] text-[16px] leading-[26px] font-normal">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's...
+                                industry. Lorem Ipsum has been the industrys...
                             </p>
                         </div>
                     </div>
