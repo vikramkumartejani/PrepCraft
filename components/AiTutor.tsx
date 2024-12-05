@@ -1,6 +1,35 @@
 import Image from "next/image";
 import React from "react";
 
+
+interface BoxData {
+    title: string;
+    description: string;
+    image: string;
+    cornerImage: string;
+}
+
+const boxData: BoxData[] = [
+    {
+        title: "AI-Powered Learning",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys...",
+        image: "/assets/rocket.svg",
+        cornerImage: "/assets/corner.svg",
+    },
+    {
+        title: "Strategic Gaming",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys...",
+        image: "/assets/strategic-gaming.svg",
+        cornerImage: "/assets/corner.svg",
+    },
+    {
+        title: "Exam Excellence",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...",
+        image: "/assets/exam-excellence.svg",
+        cornerImage: "/assets/corner.svg",
+    },
+];
+
 const AiTutor = () => {
     return (
         <div
@@ -21,6 +50,7 @@ const AiTutor = () => {
                     height={100}
                 />
             </div>
+
             <div className="absolute top-0 left-0">
                 <Image
                     src="/assets/left-dots.svg"
@@ -53,51 +83,47 @@ const AiTutor = () => {
                     developing critical thinking and problem-solving skills.
                 </p>
 
-                {/* Boxes */}
-                <div className="py-[53px] grid grid-cols-3 gap-5">
-                    <div className="relative w-full p-[1.5px] rounded-[24px] rounded-se-[80px] custom-bor bg-gradient-to-b from-[#3190FFD9] to-[#3190FF]/0">
-                        {/* Corner Accent */}
-                        <div className="absolute right-1.5 top-1.5">
-                            <Image
-                                src="/assets/corner.svg"
-                                alt="corner"
-                                width={60}
-                                height={50}
-                            />
-                        </div>
-
-                        {/* Content Box */}
-                        <div className="relative bg-[#071125] rounded-[24px] rounded-se-[80px] px-8 py-10 text-white">
-
-                            <div className="mb-[28px] w-[269px] h-[2px] opacity-70" style={{background:"linear-gradient(90deg, rgba(255, 255, 255, 0) 24.6%, #FFFFFF 53.13%, rgba(255, 255, 255, 0) 81.6%)"}}></div>
-
-                            {/* Rocket Icon */}
-                            <div className="mb-5">
-                                <Image
-                                    src="/assets/rocket.svg"
-                                    alt="rocket"
-                                    width={78}
-                                    height={78}
-                                />
+                <div className="pt-[53px] pb-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    {boxData.map((box, index) => (
+                        <div
+                            key={index}
+                            className="relative w-full p-[1.5px] rounded-[24px] rounded-se-[80px] custom-bor bg-gradient-to-b from-[#3190FFD9] to-[#3190FF]/0"
+                        >
+                            {/* Corner Accent */}
+                            <div className="absolute right-1.5 top-1.5">
+                                <Image src={box.cornerImage} alt="corner" width={60} height={50} />
                             </div>
 
-                            {/* Text Content */}
-                            <h2 className="text-[#FFFFFF] text-[20px] leading-[30px] font-medium">
-                                AI-Powered Learning
-                            </h2>
+                            {/* Content Box */}
+                            <div className="relative bg-[#071125] rounded-[24px] rounded-se-[80px] px-8 py-10 text-white">
+                                <div
+                                    className="mb-[28px] w-[269px] h-[2px] opacity-70"
+                                    style={{
+                                        background:
+                                            "linear-gradient(90deg, rgba(255, 255, 255, 0) 24.6%, #FFFFFF 53.13%, rgba(255, 255, 255, 0) 81.6%)",
+                                    }}
+                                ></div>
 
-                            <div className="w-[25px] h-[1px] bg-[#FFFFFF4D] my-5"></div>
+                                <div className="mb-5">
+                                    <Image src={box.image} alt="icon" width={78} height={78} />
+                                </div>
 
-                            <p className="text-[#A5AAC6] text-[16px] leading-[26px] font-normal">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industrys...
-                            </p>
+                                <h2 className="text-[#FFFFFF] text-[20px] leading-[30px] font-medium">
+                                    {box.title}
+                                </h2>
+
+                                <div className="w-[25px] h-[1px] bg-[#FFFFFF4D] my-5"></div>
+
+                                <p className="text-[#A5AAC6] text-[16px] leading-[26px] font-normal">
+                                    {box.description}
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
 
                 {/* Button */}
-                <button className=" w-[200px] mx-auto rounded-[90px] bg-[#3D79FB] h-[50px] md:h-[65px] flex items-center gap-3">
+                <button className="w-[200px] mx-auto rounded-[90px] bg-[#3D79FB] h-[50px] md:h-[65px] flex items-center gap-3">
                     <Image
                         src="/assets/btn-arrow.svg"
                         alt="btn-arrow"
