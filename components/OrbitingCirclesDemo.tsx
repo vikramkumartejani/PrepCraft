@@ -8,6 +8,33 @@ const OrbitingCircles: React.FC = () => {
         rotate: 360,
     };
 
+    const outerLogos = [
+        "/assets/creativity.svg",
+        "/assets/ai-brain-two.svg",
+        "/assets/creativity2.svg",
+        "/assets/computer-engineer.svg",
+        "/assets/learning.svg",
+        "/assets/board-game.svg",
+    ];
+
+    const middleLogos = [
+        "/assets/creativity.svg",
+        "/assets/ai-brain-two.svg",
+        "/assets/creativity2.svg",
+        "/assets/computer-engineer.svg",
+        "/assets/learning.svg",
+        "/assets/board-game.svg",
+    ];
+
+    const innerLogos = [
+        "/assets/creativity.svg",
+        "/assets/ai-brain-two.svg",
+        "/assets/creativity2.svg",
+        "/assets/computer-engineer.svg",
+        "/assets/learning.svg",
+        "/assets/board-game.svg",
+    ];
+
     return (
         <div className=" flex items-center justify-center mt-[200px] md:mt-[500px] ">
             {/* Central Title */}
@@ -73,243 +100,70 @@ const OrbitingCircles: React.FC = () => {
                 </div>
             </div>
 
-            {/* Orbiting Logos */}
             <div className="relative flex items-center justify-center">
-                {/* Outer Orbit */}
+                {/* Outer Circle */}
                 <motion.div
-                    className="absolute w-[400px] md:w-[800px] h-[400px] md:h-[800px] border border-[#ffffff30] rounded-full flex items-center justify-center"
+                    className="absolute w-[850px] h-[850px] border border-[#ffffff30] rounded-full flex items-center justify-center"
                     animate={circlePath}
                     transition={{
                         repeat: Infinity,
-                        duration: 12,
+                        duration: 30,
                         ease: "linear",
                     }}
                 >
-                    {/* Image 1 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(0deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/creativity.svg"
-                            alt="Google Drive"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 2 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(60deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/ai-brain-two.svg"
-                            alt="AI Brain"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 3 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(120deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/creativity2.svg"
-                            alt="Creativity"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 4 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(180deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/computer-engineer.svg"
-                            alt="Computer Engineer"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 5 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(240deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/learning.svg"
-                            alt="Learning"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 6 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(300deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/board-game.svg"
-                            alt="Board Game"
-                            className="w-full h-full"
-                        />
-                    </div>
+                    {outerLogos.map((logo, index) => (
+                        <div
+                            key={`outer-${index}`}
+                            className="absolute w-12 h-12"
+                            style={{ transform: `rotate(${(index * 360) / outerLogos.length}deg) translateY(-430px)` }}
+                        >
+                            <img src={logo} alt={`Outer Logo ${index + 1}`} width={78} height={78} />
+                        </div>
+                    ))}
                 </motion.div>
 
-                {/* Middle Orbit */}
+                {/* Middle Circle */}
                 <motion.div
-                    className="absolute w-[300px] md:w-[700px] h-[300px] md:h-[700px] border border-[#ffffff30] rounded-full flex items-center justify-center"
-                    animate={{ rotate: -360 }}
-                    transition={{
-                        repeat: Infinity,
-                        duration: 8,
-                        ease: "linear",
-                    }}
-                >
-                    {/* Image 1 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(0deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/creativity.svg"
-                            alt="WhatsApp"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 2 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(60deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/ai-brain-two.svg"
-                            alt="AI Brain"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 3 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(120deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/creativity2.svg"
-                            alt="Creativity"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 4 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(180deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/computer-engineer.svg"
-                            alt="Computer Engineer"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 5 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(240deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/learning.svg"
-                            alt="Learning"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 6 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(300deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/board-game.svg"
-                            alt="Board Game"
-                            className="w-full h-full"
-                        />
-                    </div>
-                </motion.div>
-
-                {/* Inner Orbit */}
-                <motion.div
-                    className="absolute w-[250px] md:w-[600px] h-[250px] md:h-[600px] border border-[#ffffff30] rounded-full flex items-center justify-center"
+                    className="absolute w-[720px] h-[720px] border border-[#ffffff30] rounded-full flex items-center justify-center"
                     animate={circlePath}
                     transition={{
                         repeat: Infinity,
-                        duration: 10,
+                        duration: 20,
                         ease: "linear",
                     }}
                 >
-                    {/* Image 1 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(0deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/creativity.svg"
-                            alt="Notion"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 2 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(60deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/ai-brain-two.svg"
-                            alt="AI Brain"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 3 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(120deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/creativity2.svg"
-                            alt="Creativity"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 4 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(180deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/computer-engineer.svg"
-                            alt="Computer Engineer"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 5 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(240deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/learning.svg"
-                            alt="Learning"
-                            className="w-full h-full"
-                        />
-                    </div>
-                    {/* Image 6 */}
-                    <div
-                        className="absolute w-10 h-10"
-                        style={{ transform: "rotate(300deg) translateY(-350px)" }}
-                    >
-                        <img
-                            src="/assets/board-game.svg"
-                            alt="Board Game"
-                            className="w-full h-full"
-                        />
-                    </div>
+                    {middleLogos.map((logo, index) => (
+                        <div
+                            key={`middle-${index}`}
+                            className="absolute w-12 h-12"
+                            style={{ transform: `rotate(${(index * 360) / middleLogos.length}deg) translateY(-360px)` }}
+                        >
+                            <img src={logo} alt={`Middle Logo ${index + 1}`} className="w-full h-full" />
+                        </div>
+                    ))}
+                </motion.div>
+
+                {/* Inner Circle */}
+                <motion.div
+                    className="absolute w-[600px] h-[600px] border border-[#ffffff30] rounded-full flex items-center justify-center"
+                    animate={circlePath}
+                    transition={{
+                        repeat: Infinity,
+                        duration: 15,
+                        ease: "linear",
+                    }}
+                >
+                    {innerLogos.map((logo, index) => (
+                        <div
+                            key={`inner-${index}`}
+                            className="absolute w-12 h-12"
+                            style={{ transform: `rotate(${(index * 360) / innerLogos.length}deg) translateY(-300px)` }}
+                        >
+                            <img src={logo} alt={`Inner Logo ${index + 1}`} className="w-full h-full" />
+                        </div>
+                    ))}
                 </motion.div>
             </div>
-
 
         </div>
     );
