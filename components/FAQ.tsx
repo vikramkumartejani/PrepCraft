@@ -30,7 +30,7 @@ const faqs: FAQItem[] = [
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0)
     return ( 
-    <div className='bg-[#030916]'>
+    <div id='faq' className='bg-[#030916]'>
         <div className='w-full pt-[50px] md:pt-[224px] md:px-8 px-4' style={{backgroundImage:"url('/assets/faq.svg')", backgroundRepeat:'no-repeat', backgroundSize:'contain'}}>
             <div className='max-w-[1180px] mx-auto w-full'>
                 <h4 className='text-center text-[#2D91FD] text-lg md:text-[20px] md:leading-[32px] font-semibold'>FAQs</h4>
