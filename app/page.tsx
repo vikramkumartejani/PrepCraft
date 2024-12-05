@@ -8,16 +8,15 @@ import Hero from "../components/Hero";
 import Reviews from "../components/Reviews";
 
 
-
 export default function Home() {
   return (
-    <div className="">
-      <Hero/>
-      <AiTutor/>
-      <Reviews/>
-      <FAQ/>
-      <GetTouch/>
-      <Footer/>
+    <div className="overflow-x-hidden">
+      <Hero />
+      <AiTutor />
+      <Reviews />
+      <FAQ />
+      <GetTouch />
+      <Footer />
     </div>
   );
 }
