@@ -14,18 +14,53 @@
 
 body {
   font-family: "Poppins", sans-serif;
-} 
-
-.custom-border {
-  border: 10px solid transparent;  
-  border-image-source: linear-gradient(0deg, #262626, #262626), 
-                       linear-gradient(28.63deg, #3b6eff 10.71%, #3decff 86.11%);
-  border-image-slice: 1;
-  border-radius: 15px; 
 }
 
+.custom-border {
+  border: 10px solid transparent;
+  border-image-source: linear-gradient(0deg, #262626, #262626),
+    linear-gradient(28.63deg, #3b6eff 10.71%, #3decff 86.11%);
+  border-image-slice: 1;
+  border-radius: 15px;
+}
 
 .custom-bor {
-  background: linear-gradient(180deg, rgba(49, 144, 255, 0.85) 0%, rgba(49, 144, 255, 0) 69.93%); 
+  background: linear-gradient(
+    180deg,
+    rgba(49, 144, 255, 0.85) 0%,
+    rgba(49, 144, 255, 0) 69.93%
+  );
+}
+
+.custom {
+  backdrop-filter: blur(256px);
+  opacity: 0.7; /* Fix opacity value */
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse linear infinite;
 }
 
