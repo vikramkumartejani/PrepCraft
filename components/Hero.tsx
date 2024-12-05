@@ -17,7 +17,7 @@ const Hero = () => {
         alt="cube"
         width={200.72}
         height={186.07}
-        className="absolute top-[142px] xl:left-[80px] lg:left-[20px] left-[10px] z-0 "
+        className="absolute top-[142px] xl:left-[80px] lg:left-[20px] left-[10px] z-0 w-[120px] h-[100px] md:w-[200px] md:h-[186px] "
       />
       <Navbar />
 
