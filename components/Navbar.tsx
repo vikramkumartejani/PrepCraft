@@ -30,6 +30,7 @@ const Navbar = () => {
                     alt="logo"
                     width={179}
                     height={43}
+                    className="w-[140px] md:w-[179px]"
                 />
 
                 {/* Menu Icon (Visible Below lg) */}
@@ -94,22 +95,22 @@ const Navbar = () => {
 
                     {/* Links */}
                     <ul className="flex flex-col items-center justify-center gap-6">
-                        <li className="text-[16px] font-medium leading-[24px]">
+                        <li className="text-[14px] font-medium leading-[24px]">
                             <Link href="/">Home</Link>
                         </li>
-                        <li className="text-[16px] font-medium leading-[24px]">
+                        <li className="text-[14px] font-medium leading-[24px]">
                             <Link href="/">Our programs</Link>
                         </li>
-                        <li className="text-[16px] font-medium leading-[24px]">
+                        <li className="text-[14px] font-medium leading-[24px]">
                             <Link href="/">About Us</Link>
                         </li>
-                        <li className="text-[16px] font-medium leading-[24px]">
+                        <li className="text-[14px] font-medium leading-[24px]">
                             <Link href="/#faq">FAQ</Link>
                         </li>
                     </ul>
                     {/* Open App Button */}
                     <button
-                        className="mt-6 w-[178px] mx-auto rounded-[90px] h-[50px] flex items-center gap-3 justify-center"
+                        className="mt-6 w-[135px] mx-auto rounded-[90px] h-[40px] flex items-center gap-2 justify-center"
                         style={{
                             background:
                                 "linear-gradient(28.63deg, #3B6EFF 10.71%, #3DAEFF 86.11%)",
@@ -118,11 +119,10 @@ const Navbar = () => {
                         <Image
                             src="/assets/open-app.svg"
                             alt="open-app"
-                            width={45}
-                            height={45}
-                            className="w-[35px] h-[35px]"
+                            width={30}
+                            height={30}
                         />
-                        <h2 className="text-[#F8FAFB] font-semibold text-base md:text-lg leading-[27px]">
+                        <h2 className="text-[#F8FAFB] font-semibold text-sm sm:text-base md:text-lg leading-[27px]">
                             Open App
                         </h2>
                     </button>
