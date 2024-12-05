@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "PrepCraft",
-  description: "PrepCraft",
+  description: "PrepCraf",
 };
 
 export default function RootLayout({
