@@ -1,4 +1,5 @@
 "use client";
+import AiTutor from "@/components/AiTutor";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import GetTouch from "@/components/GetTouch";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <div className="">
       <Hero/>
+      <AiTutor/>
       <Reviews/>
       <FAQ/>
       <GetTouch/>
