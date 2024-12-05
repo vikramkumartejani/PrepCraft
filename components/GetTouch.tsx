@@ -3,8 +3,8 @@ import React from "react";
 
 const GetTouch = () => {
   return (
-    <div className="bg-[#071125] w-full h-full pb-[148px]">
-      <div className=" w-full h-full text-center text-white relative pt-[250px]">
+    <div className="bg-[#071125] w-full h-full lg:pb-[148px] pb-[50px]">
+      <div className=" w-full h-full text-center text-white relative lg:pt-[250px] pt-[50px]">
         <div className="absolute inset-0 z-20">
           <img
             src="/assets/get-in-touch-circle.png"
@@ -36,10 +36,10 @@ const GetTouch = () => {
               className=" absolute bottom-0 right-0"
             />
             <div className="md:px-8 px-4">
-              <h1 className="text-white text-[48px] leading-[60px] font-semibold">
+              <h1 className="text-white text-[30px] md:text-[48px] md:leading-[60px] leading-[35px] font-semibold">
                 Get In Touch with Us
               </h1>
-              <p className="text-[16px] leading-[24.64px] font-normal text-white mt-4 max-w-[917px] mx-auto">
+              <p className="text-[15px] md:text-[16px] md:leading-[24.64px] font-normal text-white mt-4 max-w-[917px] mx-auto">
                 We’re here to support your child’s educational journey. Whether
                 you have questions about our AI-powered practice exams,
                 educational games, or want to learn more about PrepCraft, feel
@@ -66,8 +66,9 @@ const GetTouch = () => {
                     alt="correct"
                     width={24}
                     height={24}
+                    className="md:w-[24px] w-[20px]"
                   />
-                  <h2 className="text-[#CDD5DF] text-[16px] leading-[24px] font-normal tracking-[-0.01em] mt-0.5">
+                  <h2 className="text-[#CDD5DF] text-[15px] md:text-[16px] md:leading-[24px] font-normal tracking-[-0.01em] mt-0.5">
                     Free 15 days trial
                   </h2>
                 </div>
@@ -77,8 +78,9 @@ const GetTouch = () => {
                     alt="correct"
                     width={24}
                     height={24}
+                    className="md:w-[24px] w-[20px]"
                   />
-                  <h2 className="text-[#CDD5DF] text-[16px] leading-[24px] font-normal tracking-[-0.01em] mt-0.5">
+                  <h2 className="text-[#CDD5DF] text-[15px] md:text-[16px] md:leading-[24px] font-normal tracking-[-0.01em] mt-0.5">
                     No credit card required
                   </h2>
                 </div>
@@ -88,8 +90,9 @@ const GetTouch = () => {
                     alt="correct"
                     width={24}
                     height={24}
+                    className="md:w-[24px] w-[20px]"
                   />
-                  <h2 className="text-[#CDD5DF] text-[16px] leading-[24px] font-normal tracking-[-0.01em] mt-0.5">
+                  <h2 className="text-[#CDD5DF] text-[15px] md:text-[16px] md:leading-[24px] font-normal tracking-[-0.01em] mt-0.5">
                     Support 24/7
                   </h2>
                 </div>
