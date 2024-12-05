@@ -6,8 +6,8 @@ import OrbitingCirclesDemo from './OrbitingCirclesDemo';
 const Hero = () => {
   return (
     <div
-      className="pt-[20px] lg:pt-[36px] bg-[#071125] relative w-full h-full overflow-hidden"
-      style={{ backgroundImage: 'url("/assets/hero-bg.png")' }}
+      className="h-screen pt-[20px] lg:pt-[36px] bg-[#071125] relative w-full overflow-hidden"
+      style={{ backgroundImage: 'url("/assets/hero-bg.png")', backgroundPosition:'center', backgroundRepeat:'no-repeat'}}
     >
       <Navbar />
 

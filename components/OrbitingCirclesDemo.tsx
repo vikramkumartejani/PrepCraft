@@ -36,9 +36,9 @@ const OrbitingCircles: React.FC = () => {
     ];
 
     return (
-        <div className=" flex items-center justify-center mt-[200px] md:mt-[500px] ">
+        <div className="flex items-center justify-center mt-[200px] sm:mt-[320px] md:mt-[500px] ">
             {/* Central Title */}
-            <div className=" absolute z-20 max-w-[775px] mx-auto w-full text-center">
+            <div className=" absolute z-20 max-w-[795px] mx-auto w-full text-center px-5">
                 <div className="mb-4 bg-[#00000094] w-[150px] md:w-[184px] max-w-full mx-auto h-[25px] md:h-[35px] rounded-[16.64px] flex items-center justify-center gap-2">
                     <h4 className="text-[#57A5FF] text-xs md:text-[16.64px] leading-[16.64px] font-medium uppercase">
                         A best way to
@@ -51,7 +51,7 @@ const OrbitingCircles: React.FC = () => {
                     />
                 </div>
                 <h1
-                    className="text-[25px] md:text-[52px] md:leading-[70.72px] font-bold uppercase"
+                    className="text-[20px] sm:text-[25px] md:text-[52px] md:leading-[70.72px] font-bold uppercase"
                     style={{
                         background:
                             "linear-gradient(94deg, #FFFFFF 13.31%, #286CFF 100.52%), linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))",
@@ -67,7 +67,7 @@ const OrbitingCircles: React.FC = () => {
                     aged 4-14.
                 </p>
                 <button
-                    className="my-4 md:my-8 w-[190px] md:w-[250px] max-w-full mx-auto rounded-[90px] h-[40px] md:h-[65px] flex items-center gap-3"
+                    className="my-4 md:my-8 w-[210px] md:w-[250px] max-w-full mx-auto rounded-[90px] h-[40px] md:h-[65px] flex items-center gap-3"
                     style={{
                         background:
                             "linear-gradient(28.63deg, #3B6EFF 10.71%, #3DAEFF 86.11%)",
@@ -87,7 +87,7 @@ const OrbitingCircles: React.FC = () => {
                 <div className="flex items-center flex-col justify-center gap-3">
                     <Link
                         href="/"
-                        className="text-[#FFFFFFA3] font-medium text-[17px] leading-[16.74px]"
+                        className="text-[#FFFFFFA3] font-medium text-[15px] md:text-[17px] leading-[16.74px]"
                     >
                         learn more
                     </Link>
@@ -103,11 +103,11 @@ const OrbitingCircles: React.FC = () => {
             <div className="relative flex items-center justify-center">
                 {/* Outer Circle */}
                 <motion.div
-                    className="absolute w-[850px] h-[850px] border border-[#ffffff30] rounded-full flex items-center justify-center"
+                    className="absolute w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] md:w-[850px] md:h-[850px] border border-[#ffffff30] rounded-full flex items-center justify-center"
                     animate={circlePath}
                     transition={{
                         repeat: Infinity,
-                        duration: 30,
+                        duration: 40,
                         ease: "linear",
                     }}
                 >
@@ -124,11 +124,11 @@ const OrbitingCircles: React.FC = () => {
 
                 {/* Middle Circle */}
                 <motion.div
-                    className="absolute w-[720px] h-[720px] border border-[#ffffff30] rounded-full flex items-center justify-center"
+                    className="absolute w-[300px] h-[300px] sm:w-[500px] md:w-[720px] sm:h-[500px] md:h-[720px] border border-[#ffffff30] rounded-full flex items-center justify-center"
                     animate={circlePath}
                     transition={{
                         repeat: Infinity,
-                        duration: 20,
+                        duration: 30,
                         ease: "linear",
                     }}
                 >
@@ -145,11 +145,11 @@ const OrbitingCircles: React.FC = () => {
 
                 {/* Inner Circle */}
                 <motion.div
-                    className="absolute w-[600px] h-[600px] border border-[#ffffff30] rounded-full flex items-center justify-center"
+                    className="absolute w-[250px] h-[250px] sm:w-[400px] md:w-[600px] sm:h-[400px] md:h-[600px] border border-[#ffffff30] rounded-full flex items-center justify-center"
                     animate={circlePath}
                     transition={{
                         repeat: Infinity,
-                        duration: 15,
+                        duration: 20,
                         ease: "linear",
                     }}
                 >
